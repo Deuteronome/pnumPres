@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'sand';
+    src: url('./Quicksand.otf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +11,15 @@
     --clr-fnt-main : #383838;
     --clr-shadow : #000000;
     --clr-focus-btn : #585858;
+    --clr-container-bg : #ffffff;
+    --clr-fnt-title : #ff7b00;
 }
 
 body {
     width: 100vw;
     min-height: 100vh;
+    font-family: 'sand', sans-serif;
+    background-color: var(--clr-bg-main);
 }
 
 /*menu latéral*/
@@ -32,16 +41,24 @@ body {
     top : 1vh;
     right : 1vh;
     height: 6vh;
-    width : 6vh;
-    
-    color: var(--clr-bg-main);
-    
+    width : 6vh;    
+    color: var(--clr-bg-main);    
     padding : 0.5vh;
 }
 
 .nav-icon {
     width : 5vh;
 
+}
+
+#nav-logo {
+    position : absolute;
+    top : 1vh;
+    left : 1vh;
+    width : 6vh;
+    height: 6vh;
+    background-image: url('../assets//icons/logo.png');
+    background-size: cover;
 }
 
 #side-nav {
@@ -74,4 +91,39 @@ body {
 
 .nav-btn:hover {
     background-color: var(--clr-focus-btn);
+}
+
+/*Espace principal*/
+
+main {
+    width : 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3vmin;
+}
+
+.content-container {
+    width : 65vw;
+    box-shadow: var(--clr-shadow) 5px 5px 10px 0;
+    background-color: var(--clr-container-bg);
+}
+
+.content-container>h1, .content-container>h2 {
+    color : var(--clr-fnt-title);
+    width : 100%;
+    text-align: center;
+}
+
+/*carousel*/
+/* - accueil */
+
+.carousel-home {
+    width : 65vw;    
+}
+
+.home-cpic {
+    aspect-ratio: 3/1;
 }
