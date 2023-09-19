@@ -19,6 +19,10 @@
         {% include "_partials/_sidenav.html.twig" %}
         
         <main>
+            {% block carousel %}
+                {% include "_partials/_carousel.html.twig" %}
+            {% endblock %}
+
             {% block body %}
             {% endblock %}
         </main>

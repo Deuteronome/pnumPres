@@ -16,9 +16,9 @@ class MainController extends AbstractController
         $homeCarouselPictures = $carouselRepository->findOneByName('home_carousel')->getPictures();        
         $navItems = $navItemsRepository->findAll();
 
-        return $this->render('main/index.html.twig', [
+        return $this->render('main/home.html.twig', [
            'navItems' => $navItems,
-           'homeCarouselPictures' => $homeCarouselPictures
+           'carouselPictures' => $homeCarouselPictures
         ]);
     }
 }

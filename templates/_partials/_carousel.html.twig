@@ -1,0 +1,14 @@
+<div id="carouselExampleSlidesOnly" class="carousel slide carousel-home" data-bs-ride="carousel">
+    <div class="carousel-inner ">
+        {% for picture in carouselPictures %}
+            <div class="carousel-item" data-bs-interval="{{picture.delay}}">
+                <img src="{{ asset(picture.path)}}" class="d-block w-100 home-cpic" alt="...">
+            </div>
+        {% endfor %}   
+    </div>
+</div>
+
+<script>
+    let firstSlide = document.querySelector(".carousel-item")
+    firstSlide.classList.add("active")
+</script>

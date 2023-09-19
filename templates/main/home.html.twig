@@ -3,18 +3,8 @@
 {% block title %}Accueil{% endblock %}
 
 {% block body %}
-<div id="carouselExampleSlidesOnly" class="carousel slide carousel-home" data-bs-ride="carousel">
-    <div class="carousel-inner ">
-    {% for picture in homeCarouselPictures %}
-        <div class="carousel-item" data-bs-interval="{{picture.delay}}">
-            <img src="{{ asset(picture.path)}}" class="d-block w-100 home-cpic" alt="...">
-        </div>
-    {% endfor %}
-      
-    
-    </div>
-  </div>
 
+  
   <div class="main-content content-container my-5 p-4">
         <h1>La Prépa Numérique à l'E2C - Grand Lille</h1>
         <p>La Prépa Numérique est un parcours spécifique proposé par l’E2C Grand Lille à des stagiaires désireux d’approfondir leurs connaissances sur les métiers du numérique et de commencer à développer des compétences techniques dans ce domaine.</p>
@@ -28,11 +18,19 @@
             <li>L'expertise de l'E2C pour affiner le projet professionnel</li>
             <li>Le développement des compétences transversales gràce au workshop</li>
         </ul>
+        <h2>Et en pratique?</h2>
+        <p>La prochaine Prépa Numérique aura lieu au sein du site de Lille.</p>
+        <p><strong class="text-strong">Adresse :</strong> 48 rue des canonniers, 59000 LILLE</p>
+        <p><strong class="text-strong">Dates :</strong> du 6 novembre 2023 au 23 février 2024</p>
+        <p> <strong class="text-strong">Interessé(e)?</strong> Participez à une des réunions collectives pour en savoir plus et vous inscrire :</p>
+        <ul>
+            <li>Le 3 octobre 2023 à 15h00</li>
+            <li>Le 10 octobre 2023 à 15h00</li>
+            <li>Le 17 octobre 2023 à 15h00</li>
+            <li>Le 31 octobre 2023 à 15h00</li>
+        </ul>
         <h2>Trouver sa voie, construire son parcours!</h2>
     </div>
 
-  <script>
-       let firstSlide = document.querySelector(".carousel-item")
-       firstSlide.classList.add("active")
-  </script>
+  
 {% endblock %}

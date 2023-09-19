@@ -117,6 +117,14 @@ main {
     text-align: center;
 }
 
+.content-container>p {
+    text-align: justify;
+}
+
+.text-strong {
+    color : var(--clr-fnt-title);
+}
+
 /*carousel*/
 /* - accueil */
 
