@@ -36,6 +36,15 @@ body {
     padding : 0.5vh;
 }
 
+#nav-trigger:hover {
+    background-color: var(--clr-focus-btn);
+}
+
+#nav-trigger:active {
+    background-color: var(--clr-container-bg);
+    color: var(--clr-fnt-main);
+}
+
 #close-nav {
     position: absolute;
     top : 1vh;
@@ -44,6 +53,10 @@ body {
     width : 6vh;    
     color: var(--clr-bg-main);    
     padding : 0.5vh;
+}
+
+#close-nav:active {
+    color : var(--clr-focus-btn);
 }
 
 .nav-icon {
@@ -106,6 +119,10 @@ main {
 }
 
 .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
     width : 65vw;
     box-shadow: var(--clr-shadow) 5px 5px 10px 0;
     background-color: var(--clr-container-bg);
@@ -121,11 +138,15 @@ main {
     text-align: justify;
 }
 
+.content-container>ul {
+    font-size: 1.2rem;
+}
+
 .text-strong {
     color : var(--clr-fnt-title);
 }
 
-/*carousel*/
+/*carousel photos*/
 /* - accueil */
 
 .carousel-home {
@@ -134,4 +155,28 @@ main {
 
 .home-cpic {
     aspect-ratio: 3/1;
+}
+
+/*Carousel contenu */
+
+.car-but {
+    z-index: 10;
+}
+
+.car-but-prev {
+    transform: translateX(-6vw);
+}
+
+.car-but-next {
+    transform: translateX(6vw);
+}
+
+.car-container {
+    height: 40vh;
+}
+
+.content-link {
+    text-decoration: none;
+    color : var(--clr-fnt-title);
+    font-weight: 800;
 }

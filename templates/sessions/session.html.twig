@@ -3,8 +3,60 @@
 {% block title %}Ateliers{% endblock %}
 
 {% block body %}
-    <div class="main-content content-container my-5 p-4">
-        
-        
-    </div>
+
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="main-content content-container car-container my-5 p-4">
+                        <h1>Des ateliers de découverte pour monter en compétences</h1>
+                        <p>Au cours de chaque semaine de formation, des ateliers techniques sont proposés pour découvrir différentes activités autours des métiers du numérique : codage, 3D, électronique, réseaux...</p>
+                        <p>Le but est d'ouvrir les horizons, découvrir et prendre en mains différents outils, baigner dans la culture numérique et confirmer son intérêt pour ces activités.</p>                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="main-content content-container car-container my-5 p-4">
+                        <h2>Développement Web</h2>
+                        <p>Découvrir le fonctionnement du web à traver le développement de sites et d'application</p>
+                        <p><strong class="text-strong">Front End :</strong>Un atelier d'intiation avec HTML et CSS et un deuxième atelier pour ajouter de l'interactivité avec JavaScript <br><a href="#" class="content-link">→ Voir le projet</a></p>
+                        <p><strong class="text-strong">Back End :</strong>Un atelier autour des bases de données avec MySQL et un atelier de développement PHP avec mise en place d'un serveur Web <br><a href="#" class="content-link">→ Voir le projet</a></p>
+                        <p><strong class="text-strong">Aller plus loin :</strong>En fin de parcours, les stagiaires peuvent choisir des thèmes d'atelier pour approfondir certaines notion, comme la Programmation Orientée Objet <br><a href="#" class="content-link">→ Voir le projet</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="main-content content-container car-container my-5 p-4">
+                        <h2>Le monde de la 3D</h2>
+                        <p>Entre l'animation et les jeux vidéos, le monde de la 3D est devenu très important. C'est un domaine passionnant qui allie technique et créativité.</p>
+                        <p><strong class="text-strong">Modélisation :</strong> Découverte du logiciel Blender et prise en main des différents outils avec le 'défis du donut', connus des créateurs du monde entier.</p>
+                        <p><strong class="text-strong">Jeux vidéos :</strong> Initiation au développement de jeux vidéo avec le moteur de jeux Unity3D. Utilisation du langage C# pour un lien entre le visuel et le codage.</p>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="main-content content-container car-container my-5 p-4">
+                        <h2>Et le reste</h2>
+                        <p>En plus de ces deux cycles d'atelier, plusieurs autres thèmes sont abordés pour balayer le plus de métiers possible.</p>
+                        <p><strong class="text-strong">Réseau</strong> Création d'une architecture réseau aver Sosko Packet Tracer</p>
+                        <p><strong class="text-strong">Robotique :</strong> Découverte de l'algorithmique avecde la programmation de MBot</p>
+                        <p><strong class="text-strong">Electronique :</strong> Programmation de microcontroller Arduino - gestion des capteurs et des actionneurs au travers de mini-projets</p>
+                        <p><strong class="text-strong">Design :</strong> Réalisation d'une maquette avec Figma.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev car-but car-but-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next car-but car-but-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    
+
 {% endblock %}

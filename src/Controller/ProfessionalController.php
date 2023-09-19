@@ -4,7 +4,7 @@ namespace App\Controller;
 
 use App\Repository\CarouselRepository;
 use App\Repository\NavItemsRepository;
-use Container5IF4aR6\getCarouselRepositoryService;
+
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
