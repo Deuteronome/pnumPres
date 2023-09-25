@@ -3,8 +3,37 @@
 {% block title %}Soft Skills{% endblock %}
 
 {% block body %}
-    <div class="main-content content-container my-5 p-4">
-                
-                
+    
+    <div id="carouselExampleIndicators" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>                     
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="main-content content-container car-container my-5 p-4">
+                    <h1>Un travail permanent sur les compétences</h1>
+                    <p>Au travers d'un référentiel de compétences transversales spécifique, l'E2C met en place <strong class="text-strong">l'Approche Par Compétences</strong> qui consiste à mettre en valeurs les compétences de chacun par un retour réfléxif sur chaque activité menée en formation et en stage.</p>
+                    <p>Ce travail est synthétisé sur un <a href="https://apc.misterbear.fr" target="_blank" class="content-link">outil en ligne</a> qui génère une carte de compétences valorisables.</p>
+                    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="main-content content-container car-container my-5 p-4">
+                    <h2>La mise en valeur d'un projet personnel</h2>
+                    <p>Tôt dans le parcours, les stagiaires vont définir un projet personnel sur lequel ils vont travailler et qu'ils présenteront lors d'un jury lors de la dernière semaine de la Prépa Numérique.</p>
+                    <p>Ce travail permet de travailler des compétences et des outils particulièrement intéressants dans le domaine du numérique. l'organisation et la conduite de projets avec un outil comme <strong class="text-strong">Trello</strong>, le maquettage pour faire une première présention du projet avec <strong class="text-strong">Figma</strong> et le travail collaboratif ainsi que le partage de code avec <strong class="text-strong">GitHub</strong>.</p>                    
+                </div>
+            </div>                    
+        </div>
+        <button class="carousel-control-prev car-but car-but-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next car-but car-but-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
+
 {% endblock %}

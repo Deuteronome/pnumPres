@@ -144,6 +144,7 @@ main {
 
 .text-strong {
     color : var(--clr-fnt-title);
+    
 }
 
 /*carousel photos*/
@@ -159,9 +160,7 @@ main {
 
 /*Carousel contenu */
 
-.car-but {
-    z-index: 10;
-}
+
 
 .car-but-prev {
     transform: translateX(-6vw);
@@ -179,4 +178,34 @@ main {
     text-decoration: none;
     color : var(--clr-fnt-title);
     font-weight: 800;
+}
+
+/* Les projets personnels */
+
+.per-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.stag-pres {
+    width : 60%;
+}
+
+.project-link {
+    width : 35%;
+    text-align: right;
+}
+
+.stag-portrait {
+    float: left;
+    display: block;
+    margin: 10px;
+    width : 25%;
+}
+
+.project-sticker {
+    max-height: 30vh;
+    max-width: 100%;
 }

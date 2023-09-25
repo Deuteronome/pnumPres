@@ -3,8 +3,108 @@
 {% block title %}Workshop{% endblock %}
 
 {% block body %}
-    <div class="main-content content-container my-5 p-4">
-                
-                
+    
+    <div id="carouselExampleIndicators" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button> 
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>             
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="main-content content-container car-container my-5 p-4">
+                    <h1>Galerie de projets</h1>
+                    <p>Faites défiler pour découvrir quelques exemples de projets personnels présentés par des stagiaires de la Prépa Numérique.</p>
+
+                                           
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="main-content content-container car-container my-5 p-4">
+                    <h2>Stéphane : une encyclopédie Pokémon</h2>
+                    <div class="per-project">
+                        <div class="stag-pres">
+                        <img src="{{asset('/assets/pictures/prodStag/stephane.jpg')}}" alt="Stéphane" class="stag-portrait">
+                        <p>Stéphane a rejoint l'E2C après avoir interrompu un BTS. Son but était de se former au développelement et de trouver une formation plus concrète.</p>
+                        <p>La prépa numérique lui a permis de découvrir le développement web et il va continuer dans cette voie au sein de la Web Academy à Epitech.</p>
+                        <p>Son projet lui a permis de faire ses premières armes avec le langage PHP.</p>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://svaillant.misterbear.fr" target="_blank" >
+                                <img src="{{asset('/assets/pictures/prodStag/pokeSite.jpg')}}" class="project-sticker" alt="capture">
+                            </a>
+                        </div>
+                    </div>
+                                     
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="main-content content-container car-container my-5 p-4">
+                    <h2>Lorenzo : passion foot pour le Bayern</h2>
+                    <div class="per-project">
+                        <div class="stag-pres">
+                        <img src="{{asset('/assets/pictures/prodStag/lorenzo.jpg')}}" alt="Stéphane" class="stag-portrait">
+                        <p>Lorenzo était complétement débutant quand il a intégré la Prépa Numérique pour découvrir ce domaine qui l'intéressait.</p>
+                        <p>Il s'est plongé dans les langages Front End, sa curiosité et sa persévérance l'ont amené jusqu'à l'entretien de sélection de la Web Academy à Epitech qu'il intégrera en novembre.</p>
+                        <p>Son site sur l'équipe du Bayern lui a permis de développer ses compétences en CSS.</p>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://lorfao.misterbear.fr" target="_blank" >
+                                <img src="{{asset('/assets/pictures/prodStag/bayeSite.jpg')}}" class="project-sticker" alt="capture">
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="main-content content-container car-container my-5 p-4">
+                    <h2>Albéric : tout savoir sur Resident Evil</h2>
+                    <div class="per-project">
+                        <div class="stag-pres">
+                        <img src="{{asset('/assets/pictures/prodStag/alberic.jpg')}}" alt="Stéphane" class="stag-portrait">
+                        <p>Albéric est venu à l'E2C avec une passion pour les jeux vidéo et une envie de découvrir le codage.</p>
+                        <p>Son projet à long terme est de travailler dans le développement de jeux vidéos, il souhaite donc d'abord se former dans le développement web et recherche activement une formation.</p>
+                        <p>Son projet de site lui a permis de balayer les différents aspects du web, avec du JavaScript et du PHP.</p>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://adelmotte.misterbear.fr" target="_blank" >
+                                <img src="{{asset('/assets/pictures/prodStag/reSite.jpg')}}" class="project-sticker" alt="capture">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="main-content content-container car-container my-5 p-4">
+                    <h2>Louis : son premier jeu vidéo</h2>
+                    <div class="per-project">
+                        <div class="stag-pres">
+                        <img src="{{asset('/assets/pictures/prodStag/louis.jpg')}}" alt="Stéphane" class="stag-portrait">
+                        <p>Louis a fait une formation en image de synthèse en Belgique avant de rejoindre la prépa numérique</p>
+                        <p>Passionné de développement de jeux, il s'est attelé à prendre en main le moteur de jeu Unity3D et le langage C#. Il est aujourd'hui en formation de Game Development au sein de 3 Axes à Tourcoing.</p>
+                        <p>Son projet en un petit jeu vidéo où il a mis à profit ses talents de créateur 3D.</p>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://lsouba.misterbear.fr" target="_blank" >
+                                <img src="{{asset('/assets/pictures/prodStag/jvSite.jpg')}}" class="project-sticker" alt="capture">
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>           
+        </div>
+        <button class="carousel-control-prev car-but car-but-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next car-but car-but-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
+
 {% endblock %}

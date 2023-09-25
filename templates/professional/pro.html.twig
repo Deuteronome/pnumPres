@@ -3,8 +3,47 @@
 {% block title %}Projet Pro{% endblock %}
 
 {% block body %}
-    <div class="main-content content-container my-5 p-4">
-            
-            
+
+    <div id="carouselExampleIndicators" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>            
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="main-content content-container car-container my-5 p-4">
+                    <h1>Des rencontres, des stages et des activités pour trouver sa voie</h1>
+                    <p>La définition du projet professionnel est au coeur du dispositif E2C et les outils utilisés - séances collectives autours de la connaissance de soi, plateforme de connaissances des métiers, temps réfléxifs sur ses expériences - sont mis à profit pour accompagner les stagiaires de la Prépa Numérique.</p>
+                    <p>Mais pour explorer plus en profondeur la diversité des métiers et activités spécifiques au domaine du numérique, nous nous appuyons nos partenaires pour proposer des interventions qui vont nourrir les projets des jeunes.</p>                       
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="main-content content-container car-container my-5 p-4">
+                    <h2>Aller à la rencontre des professionnels</h2>
+                    <p>Les temps forts de la définition du projet sont les échanges qui leur sont proposés sous plusieurs formes :</p>
+                    <p><strong class="text-strong">Visites d'entreprises :</strong> Se rendre sur place pour découvrir l'environnement, comprendre le rôle des différents acteurs et avoir une idée concrète des métiers, les visites sont une formidable occasion pour les stagiaires de se projeter dans leur projet et de développer leur réseau.</p>
+                    <p><strong class="text-strong">Intervention d'entreprise :</strong> Des rencontres dans nos locaux pour aborder différents thèmes par des professionnels passionnées par leur métiers : cybersécurité, développement d'applications... </p>
+                    <p><strong class="text-strong">Stages :</strong> En point d'orgue du parcours, les périodes d'immersion en entreprise permettent aux stagiaires de mettre en application leurs compétences et de valider leur projet professionnel.</p>
+                    <p><strong class="text-strong">Fest Num :</strong> Temps fort du parcours, le Fest Num est un forum qui permet à tous les acteurs du parcours (entreprises, centres de formations, stagiaires) de se rencontrer le temps d'une demi-journée pour construire la suite du parcours des jeunes de la Prépa Numérique.</p>                    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="main-content content-container car-container my-5 p-4">
+                    <h2>Connaitre les formations</h2>
+                    <p>L'objectif de la prépa numérique est de permettre aux participants de concrétiser leur projet en intégrant une formation qualifiante. Découvrir les différentes formations possibles est donc un grand enjeu du parcours.</p>
+                    <p>Se rendre sur place pour <strong class="text-strong">visiter les locaux</strong> est un bon moyen pour les stagiaires de se projeter et d'envisager d'intégrer une formation. Une <strong class="text-strong">intervention à l'E2C</strong> est aussi possible pour un premier contact et une présentation des parcours possibles. Enfin, le <strong class="text-strong">Fest Num</strong> est l'occasion de recontrer les stagiaires individuellement.</p>
+                </div>
+            </div>            
+        </div>
+        <button class="carousel-control-prev car-but car-but-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next car-but car-but-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
+
 {% endblock %}
