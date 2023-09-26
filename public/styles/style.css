@@ -172,6 +172,7 @@ main {
 
 .car-container {
     height: 40vh;
+    overflow: scroll;
 }
 
 .content-link {
